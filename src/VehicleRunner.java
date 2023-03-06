@@ -23,7 +23,7 @@ public class VehicleRunner
  
     // ---- WRITE YOUR TEST CODE BELOW! ----
     // testing all available methods on a Bicycle object
-    
+    Bicycle myBike = new Bicycle("Mountain Bike")
     
     
     

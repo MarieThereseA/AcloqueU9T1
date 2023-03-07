@@ -23,7 +23,25 @@ public class VehicleRunner
  
     // ---- WRITE YOUR TEST CODE BELOW! ----
     // testing all available methods on a Bicycle object
-    Bicycle myBike = new Bicycle("Mountain Bike")
+    Bicycle myBike = new Bicycle("Mountain Bike", 2, 6);
+    System.out.println(myBike.getName()); // inherited method
+    System.out.println(myBike.getWheels()); // inherited method
+    System.out.println(myBike.getGearCount()); // method ONLY available on Bike objects
+    myBike.move(90); // inherited method
+    myBike.turn(180); // inherited method
+    myBike.brake(0.75); // inherited method
+    myBike.ringBell(); // method ONLY available on Bike objects
+
+    Bus myBus = new Bus("B35", 6, true);
+    System.out.println(myBus.getName()); // inherited method
+    System.out.println(myBus.getWheels()); // inherited method
+    System.out.println(myBus.getHasUsbPorts()); // method ONLY available on Bike objects
+    myBus.move(20); // inherited method
+    myBus.turn(-90); // inherited method
+    myBus.brake(0.50); // inherited method
+    myBus.announceNextStop(); // method ONLY available on Bus objects
+
+
     
     
     
